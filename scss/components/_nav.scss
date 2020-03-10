@@ -1,0 +1,145 @@
+.nav {
+  &-checkbox {
+    display: none;
+  }
+
+  &-button {
+    background-color: #c4e3ff;
+    width: 7rem;
+    height: 6rem;
+    position: fixed;
+    top: 7rem;
+    right: 8rem;
+    z-index: 2000;
+    cursor: pointer;
+    border-radius: 2px;
+    box-shadow: 0 1rem 1rem rgba(#000, 0.3);
+    text-align: center;
+  }
+
+  &-bg {
+    background-image: radial-gradient($color-primary, $color-secondary);
+    background-color: #f00;
+    width: 7rem;
+    height: 6rem;
+    position: fixed;
+    top: 7rem;
+    right: 8rem;
+    z-index: 1000;
+    transition: all 0.8s;
+    border-radius: 2px;
+  }
+
+  &-checkbox:checked ~ &-bg {
+    transform: scale(80);
+  }
+
+  //icon
+  &-icon {
+    position: relative;
+    margin-top: 3rem;
+
+    &::before {
+      top: -0.8rem;
+    }
+
+    &::after {
+      top: 0.8rem;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      transition: all 0.2s;
+    }
+
+    &,
+    &::before,
+    &::after {
+      width: 3rem;
+      height: 2px;
+      background-color: #333;
+      display: inline-block;
+    }
+  }
+
+  &-button:hover &-icon::before {
+    top: -1rem;
+  }
+  &-button:hover &-icon::after {
+    top: 1rem;
+  }
+
+  &-checkbox:checked ~ &-button &-icon {
+    background-color: transparent;
+  }
+  &-checkbox:checked ~ &-button &-icon::before {
+    top: 0;
+    transform: rotate(135deg);
+  }
+  &-checkbox:checked ~ &-button &-icon::after {
+    top: 0;
+    transform: rotate(-135deg);
+  }
+
+  // .nav-body
+  &-body {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1500;
+    transition: all 0.8s;
+    opacity: 0;
+  }
+  &-list {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    width: 100%;
+    text-align: center;
+  }
+  &-item {
+  }
+
+  &-link {
+    display: inline-block;
+    font-size: 3rem;
+    font-weight: 300;
+    padding: 1rem 2rem;
+    color: $color-white;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    transition: all 0.4s;
+
+    background-image: linear-gradient(
+      120deg,
+      transparent 0%,
+      transparent 50%,
+      $color-white 50%
+    );
+    background-size: 220%;
+
+    &:hover {
+      color: $color-primary;
+      background-position: 100%;
+      transform: translate(1rem);
+    }
+
+    span {
+      display: inline-block;
+      margin-right: 1.5rem;
+    }
+  }
+
+  &-checkbox:checked ~ &-body {
+    left: 0;
+    opacity: 1;
+  }
+}
