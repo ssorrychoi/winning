@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -21,16 +21,16 @@ body {
   0% {
     opacity: 0.1;
     -webkit-transform: translateX(-5rem);
-            transform: translateX(-5rem);
+    transform: translateX(-5rem);
   }
   80% {
     -webkit-transform: translateX(1rem);
-            transform: translateX(1rem);
+    transform: translateX(1rem);
   }
   100% {
     opacity: 1;
     -webkit-transform: translate(0);
-            transform: translate(0);
+    transform: translate(0);
   }
 }
 
@@ -38,16 +38,16 @@ body {
   0% {
     opacity: 0.1;
     -webkit-transform: translateX(-5rem);
-            transform: translateX(-5rem);
+    transform: translateX(-5rem);
   }
   80% {
     -webkit-transform: translateX(1rem);
-            transform: translateX(1rem);
+    transform: translateX(1rem);
   }
   100% {
     opacity: 1;
     -webkit-transform: translate(0);
-            transform: translate(0);
+    transform: translate(0);
   }
 }
 
@@ -55,16 +55,16 @@ body {
   0% {
     opacity: 0.1;
     -webkit-transform: translateX(10rem);
-            transform: translateX(10rem);
+    transform: translateX(10rem);
   }
   80% {
     -webkit-transform: translateX(-1rem);
-            transform: translateX(-1rem);
+    transform: translateX(-1rem);
   }
   100% {
     opacity: 1;
     -webkit-transform: translate(0);
-            transform: translate(0);
+    transform: translate(0);
   }
 }
 
@@ -72,16 +72,16 @@ body {
   0% {
     opacity: 0.1;
     -webkit-transform: translateX(10rem);
-            transform: translateX(10rem);
+    transform: translateX(10rem);
   }
   80% {
     -webkit-transform: translateX(-1rem);
-            transform: translateX(-1rem);
+    transform: translateX(-1rem);
   }
   100% {
     opacity: 1;
     -webkit-transform: translate(0);
-            transform: translate(0);
+    transform: translate(0);
   }
 }
 
@@ -90,7 +90,13 @@ h2 {
   font-size: 2.4rem;
   font-weight: 800;
   text-transform: uppercase;
-  background: -webkit-gradient(linear, left top, right top, from(#285a91), to(#1f9cfd));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#285a91),
+    to(#1f9cfd)
+  );
   background: linear-gradient(left, #285a91, #1f9cfd);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -125,8 +131,16 @@ h3 {
 header {
   width: 100%;
   height: 90vh;
-  background-image: -webkit-gradient(linear, left top, right top, from(#285a91), to(#1f9cfd)), url(../images/header-image.jpg);
-  background-image: linear-gradient(to right, #285a91 0%, #1f9cfd 100%), url(../images/header-image.jpg);
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(#285a91),
+      to(#1f9cfd)
+    ),
+    url(../images/header-image.jpg);
+  background-image: linear-gradient(to right, #285a91 0%, #1f9cfd 100%),
+    url(../images/header-image.jpg);
   background-blend-mode: multiply;
   background-size: cover;
   position: relative;
@@ -143,13 +157,13 @@ header #logo-text {
   color: #fff;
   letter-spacing: -0.1rem;
   -webkit-animation-name: moveInLeft;
-          animation-name: moveInLeft;
+  animation-name: moveInLeft;
   -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  animation-duration: 1s;
   -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  animation-delay: 2s;
   -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
 }
 
 header #header-text {
@@ -165,26 +179,26 @@ header #header-text-main {
   font-size: 7.2rem;
   line-height: 7.2rem;
   -webkit-animation-name: moveInRight;
-          animation-name: moveInRight;
+  animation-name: moveInRight;
   -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  animation-duration: 1s;
   -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  animation-delay: 1s;
   -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
 }
 
 header #header-text-sub {
   margin-top: 3rem;
   font-size: 2.4rem;
   -webkit-animation-name: moveInLeft;
-          animation-name: moveInLeft;
+  animation-name: moveInLeft;
   -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  animation-duration: 1s;
   -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
+  animation-delay: 1.5s;
   -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
 }
 
 main::after {
@@ -296,7 +310,7 @@ main #section-about-photo .photo {
 
 main #section-about-photo .photo:hover {
   -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
   padding: 1rem;
   border: 3px solid #285a91;
   z-index: 10;
@@ -310,14 +324,14 @@ main #section-about-photo .photo:nth-child(1) {
 @media screen and (min-width: 701px) and (max-width: 899px) {
   main #section-about-photo .photo:nth-child(1) {
     -webkit-transform: translate(-120%);
-            transform: translate(-120%);
+    transform: translate(-120%);
   }
 }
 
 @media screen and (max-width: 700px) {
   main #section-about-photo .photo:nth-child(1) {
     -webkit-transform: translate(-120%);
-            transform: translate(-120%);
+    transform: translate(-120%);
   }
 }
 
@@ -330,7 +344,7 @@ main #section-about-photo .photo img {
   width: 100%;
   height: 100%;
   -webkit-box-shadow: 3px 3px 9px 0px rgba(0, 0, 0, 0.5);
-          box-shadow: 3px 3px 9px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 3px 3px 9px 0px rgba(0, 0, 0, 0.5);
 }
 
 main #section-etc {
@@ -400,7 +414,7 @@ main #section-etc .etc .etc-icon i {
 
 main #section-etc .etc .etc-text {
   width: 70%;
-  padding-top: 1rem;
+  padding-top: 3rem;
   float: left;
 }
 
@@ -462,15 +476,15 @@ footer #copyright p:nth-child(1) {
   word-break: break-all;
   text-align: justify;
   -webkit-column-count: 3;
-          column-count: 3;
+  column-count: 3;
   -webkit-column-gap: 3rem;
-          column-gap: 3rem;
+  column-gap: 3rem;
   -webkit-column-rule-style: dashed;
-          column-rule-style: dashed;
+  column-rule-style: dashed;
   -webkit-column-rule-width: 1px;
-          column-rule-width: 1px;
+  column-rule-width: 1px;
   -webkit-column-rule-color: #888;
-          column-rule-color: #888;
+  column-rule-color: #888;
 }
 
 footer #copyright p:last-child {
@@ -510,7 +524,7 @@ footer #copyright p:last-child {
   cursor: pointer;
   border-radius: 2px;
   -webkit-box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
-          box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
   text-align: center;
 }
 
@@ -530,7 +544,7 @@ footer #copyright p:last-child {
 
 .nav-checkbox:checked ~ .nav-bg {
   -webkit-transform: scale(80);
-          transform: scale(80);
+  transform: scale(80);
 }
 
 .nav-icon {
@@ -546,7 +560,8 @@ footer #copyright p:last-child {
   top: 0.8rem;
 }
 
-.nav-icon::before, .nav-icon::after {
+.nav-icon::before,
+.nav-icon::after {
   content: "";
   position: absolute;
   left: 0;
@@ -554,7 +569,9 @@ footer #copyright p:last-child {
   transition: all 0.2s;
 }
 
-.nav-icon, .nav-icon::before, .nav-icon::after {
+.nav-icon,
+.nav-icon::before,
+.nav-icon::after {
   width: 3rem;
   height: 2px;
   background-color: #333;
@@ -576,13 +593,13 @@ footer #copyright p:last-child {
 .nav-checkbox:checked ~ .nav-button .nav-icon::before {
   top: 0;
   -webkit-transform: rotate(135deg);
-          transform: rotate(135deg);
+  transform: rotate(135deg);
 }
 
 .nav-checkbox:checked ~ .nav-button .nav-icon::after {
   top: 0;
   -webkit-transform: rotate(-135deg);
-          transform: rotate(-135deg);
+  transform: rotate(-135deg);
 }
 
 .nav-body {
@@ -602,7 +619,7 @@ footer #copyright p:last-child {
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   list-style: none;
   width: 100%;
   text-align: center;
@@ -618,7 +635,12 @@ footer #copyright p:last-child {
   text-transform: uppercase;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
+  background-image: linear-gradient(
+    120deg,
+    transparent 0%,
+    transparent 50%,
+    #fff 50%
+  );
   background-size: 220%;
 }
 
@@ -626,7 +648,7 @@ footer #copyright p:last-child {
   color: #285a91;
   background-position: 100%;
   -webkit-transform: translate(1rem);
-          transform: translate(1rem);
+  transform: translate(1rem);
 }
 
 .nav-link span {
