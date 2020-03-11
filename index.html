@@ -31,7 +31,7 @@
     </nav>
 
     <header>
-      <div id="logo-text">2020.03.10</div>
+      <div id="logo-text"></div>
       <div id="header-text">
         <div id="header-text-main">
           위닝 제안서
@@ -135,5 +135,12 @@
         <p>Copyright &copy; 2020 Lorem All Rights Reserved.</p>
       </div>
     </footer>
+    <script>
+      const year = new Date().getFullYear();
+      const month = new Date().getMonth() + 1;
+      const day = new Date().getDate();
+      let date = year + "-" + month + "-" + day;
+      document.getElementById("logo-text").innerText = date;
+    </script>
   </body>
 </html>
